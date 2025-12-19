@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-@layer {
-}
-
 @theme {
     /* TMI Colors */
     --color-primary: #ff5e38;
