@@ -6,18 +6,19 @@ import { useState, useEffect } from "react";
 
 export default function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    // Initialize from localStorage or system preference using lazy initializer
     const [isDarkMode, setIsDarkMode] = useState(() => {
-        // Initialize state on client side only
+        // This function only runs once during initial render on client
         if (typeof window !== "undefined") {
             const savedTheme = localStorage.getItem("theme");
             const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
             return savedTheme === "dark" || (!savedTheme && prefersDark);
         }
-        return false;
+        return false; // Server-side default
     });
 
     useEffect(() => {
-        // Sync DOM with state
+        // Sync DOM with state changes
         if (isDarkMode) {
             document.documentElement.classList.add("dark");
         } else {
