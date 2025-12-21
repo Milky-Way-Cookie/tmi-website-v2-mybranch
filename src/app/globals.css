@@ -21,3 +21,27 @@
     /* Semantic Aliases */
     --color-on-accent: var(--color-white);
 }
+
+/* Dark Mode Theme - Activated when .dark class is applied to html element */
+:root.dark,
+html.dark {
+    /* TMI Colors - Slightly adjusted for better contrast in dark mode */
+    --color-primary: #ff6b4a;
+    --color-secondary: #1bc5d9;
+
+    /* Background Colors - Warm dark tones that complement the light theme */
+    --color-background: #1a1816;
+    --color-card: #242220;
+    --color-white: #ffffff;
+
+    /* Text Colors - Inverted for dark backgrounds */
+    --color-text-primary: #f5f4f3;
+    --color-text-muted: rgba(245, 244, 243, 0.7);
+
+    /* Hover States - Lighter versions for dark mode */
+    --color-hover-orange: #ff7d5f;
+    --color-hover-teal: #2dd5e8;
+
+    /* Semantic Aliases */
+    --color-on-accent: var(--color-white);
+}

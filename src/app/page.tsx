@@ -40,9 +40,9 @@ export default function Home() {
 
             {/* subtle aqua glow background */}
             <div className="pointer-events-none fixed inset-0 -z-10">
-                <div className="absolute inset-0 bg-[radial-gradient(60%_40%_at_50%_10%,rgba(10,171,190,0.18),transparent_60%)]" />
-                <div className="absolute inset-0 bg-[radial-gradient(40%_30%_at_80%_20%,rgba(255,94,56,0.10),transparent_60%)]" />
-                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(251,250,249,0.9),rgba(251,250,249,1))]" />
+                <div className="absolute inset-0 bg-[radial-gradient(60%_40%_at_50%_10%,rgba(10,171,190,0.18),transparent_60%)] dark:bg-[radial-gradient(60%_40%_at_50%_10%,rgba(27,197,217,0.15),transparent_60%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(40%_30%_at_80%_20%,rgba(255,94,56,0.10),transparent_60%)] dark:bg-[radial-gradient(40%_30%_at_80%_20%,rgba(255,107,74,0.12),transparent_60%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(251,250,249,0.9),rgba(251,250,249,1))] dark:bg-[linear-gradient(to_bottom,rgba(26,24,22,0.9),rgba(26,24,22,1))]" />
             </div>
         </main>
     );
