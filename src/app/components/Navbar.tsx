@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
@@ -62,9 +63,16 @@ export default function Navbar() {
                     <div className="flex items-center justify-between">
                         <Link
                             href="/"
-                            className="text-xl font-bold text-secondary hover:text-primary transition-colors"
+                            className="flex items-center gap-2 text-xl font-bold text-secondary hover:text-primary transition-colors"
                         >
-                            TMI
+                            <Image
+                                src="/images/TMI.png"
+                                alt="TMI"
+                                width={240}
+                                height={96}
+                                className="h-12 w-auto"
+                            />
+                            <span>UofT TMI</span>
                         </Link>
                         <div className="flex items-center gap-6">
                             {navLinks.map((link) => (
@@ -139,10 +147,17 @@ export default function Navbar() {
                     </button>
                     <Link
                         href="/"
-                        className="text-xl font-bold text-secondary hover:text-primary transition-colors"
+                        className="flex items-center gap-2 text-xl font-bold text-secondary hover:text-primary transition-colors"
                         onClick={closeMobileMenu}
                     >
-                        TMI
+                        <Image
+                            src="/images/TMI.png"
+                            alt="TMI"
+                            width={240}
+                            height={96}
+                            className="h-12 w-auto"
+                        />
+                        <span>UofT TMI</span>
                     </Link>
                     <button
                         onClick={toggleTheme}
@@ -199,10 +214,17 @@ export default function Navbar() {
                         <div className="px-6 py-4 flex items-center justify-between border-b border-secondary/20">
                             <Link
                                 href="/"
-                                className="text-xl font-bold text-secondary hover:text-primary transition-colors"
+                                className="flex items-center gap-2 text-xl font-bold text-secondary hover:text-primary transition-colors"
                                 onClick={closeMobileMenu}
                             >
-                                TMI
+                                <Image
+                                    src="/images/TMI.png"
+                                    alt="TMI"
+                                    width={240}
+                                    height={96}
+                                    className="h-12 w-auto"
+                                />
+                                <span>UofT TMI</span>
                             </Link>
                             <button
                                 onClick={closeMobileMenu}
