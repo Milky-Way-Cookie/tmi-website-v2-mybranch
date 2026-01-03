@@ -119,7 +119,7 @@ export default function AboutCarousel() {
                 
                 <div className="w-10 h-1 bg-[#FF5E38] mx-auto rounded-full mt-2" />
                 
-                <p className="pt-4 text-slate-600 text-sm leading-relaxed italic">"{vps[index].bio}"</p>
+                <p className="pt-4 text-slate-600 text-sm leading-relaxed italic">{vps[index].bio}</p>
               </motion.div>
 
               {/* LEFT CARD */}
@@ -134,7 +134,7 @@ export default function AboutCarousel() {
                 onClick={prev}
                 whileHover={{ scale: 0.78, opacity: 0.5, filter: "grayscale(50%) brightness(1)" }}
               >
-                <img src={vps[leftIndex].imageUrl} className="w-full h-full object-cover" alt="" />
+                <img src={vps[leftIndex].imageUrl} className="w-full h-full object-cover" alt={vps[leftIndex].name} />
               </motion.div>
 
               {/* RIGHT CARD */}

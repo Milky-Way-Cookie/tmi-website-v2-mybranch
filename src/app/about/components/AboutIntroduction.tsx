@@ -43,7 +43,7 @@ export default function AboutIntroduction() {
               </p>
               <p>
                 Through our reading groups, research projects, and industry partnerships, we provide 
-                students with the tools to build systems that aren't just powerful, but provably robust 
+                students with the tools to build systems that are not just powerful, but provably robust 
                 and aligned with human values.
               </p>
             </div>
